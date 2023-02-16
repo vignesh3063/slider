@@ -1,0 +1,180 @@
+.Testimonials {
+  width: 100%;
+  background-color: #1D2439;
+  overflow-x: clip;
+  position: relative;
+}
+.Testimonials .TestimonialsContent {
+  max-width: 1440px;
+  width: 75%;
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 80px;
+}
+.Testimonials .TestimonialsContent::before {
+  content: "";
+  width: 80%;
+  margin: auto;
+  height: 4px;
+  background-image: linear-gradient(90deg, rgba(217, 217, 217, 0) 0%, rgba(217, 217, 217, 0.5) 45.81%, rgba(217, 217, 217, 0) 91.11%);
+}
+.Testimonials .TestimonialsContent h2 {
+  margin-top: 60px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 82px;
+  color: #ffffff;
+  text-align: center;
+}
+.Testimonials .TestimonialsContent h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+}
+.Testimonials .TestimonialsContent p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5647058824);
+  margin-top: -5px;
+}
+.Testimonials .leftArrow {
+  width: 35px;
+  background-color: rgba(29, 36, 57, 0.5921568627);
+  border-radius: 10px;
+  left: 10%;
+  position: absolute;
+  top: 60%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  cursor: pointer;
+}
+.Testimonials .leftArrow .leftArrowDiv {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+}
+.Testimonials .rightArrow {
+  width: 35px;
+  background-color: rgba(29, 36, 57, 0.6588235294);
+  border-radius: 10px;
+  right: 10%;
+  top: 60%;
+  position: absolute;
+  height: 35px;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.Testimonials .rightArrow .rightArrowDiv {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+}
+.Testimonials .TestimonialsCards {
+  width: 75%;
+  height: 440px;
+  margin: auto;
+  position: relative;
+  transition: 1s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+  perspective: 1000px;
+  display: flex;
+}
+.Testimonials .TestimonialsCards div {
+  cursor: pointer;
+  position: absolute;
+  width: 34vw;
+  max-width: 540px;
+  height: 250px;
+  background: #FFFFFF;
+  border: 4px solid #2EAEFF;
+  border-radius: 20px;
+  padding: 30px 30px;
+  animation-timing-function: ease-in;
+  gap: 10px;
+  font-family: "Work Sans";
+  transition: 0.5s;
+}
+.Testimonials .TestimonialsCards div.div1 {
+  left: 0;
+  transition-delay: 0.3s;
+}
+.Testimonials .TestimonialsCards div.div5 {
+  right: 0;
+  transition-delay: 0.3s;
+}
+.Testimonials .TestimonialsCards div.div2 {
+  left: 10%;
+  transition-delay: 0.2;
+}
+.Testimonials .TestimonialsCards div.div4 {
+  right: 10%;
+  transition-delay: 0.2s;
+  transition: 0.2s;
+}
+.Testimonials .TestimonialsCards div.div3 {
+  transition: 0.5s;
+  transform: translateX(-50%);
+}
+.Testimonials .TestimonialsCards div.div1, .Testimonials .TestimonialsCards div.div5 {
+  transform: scale(0.6);
+  z-index: -2;
+  background-color: #d9dbe0;
+}
+.Testimonials .TestimonialsCards div.div2, .Testimonials .TestimonialsCards div.div4 {
+  transform: scale(0.8);
+  z-index: -1;
+  background-color: #eeeeee;
+}
+.Testimonials .TestimonialsCards div.div3 {
+  opacity: 1;
+  z-index: 0;
+  left: 50%;
+  transform: translate3d(-50%);
+}
+.Testimonials .TestimonialsCards div img {
+  width: 14.5%;
+}
+.Testimonials .TestimonialsCards div p {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 31px;
+  color: #838383;
+}
+.Testimonials .TestimonialsCards div span {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.Testimonials .TestimonialsCards div span a:nth-child(1) {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 31px;
+  color: #2EAEFF;
+}
+.Testimonials .TestimonialsCards div span a:nth-child(2) {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 31px;
+  color: #A4A4A4;
+}/*# sourceMappingURL=style.css.map */
